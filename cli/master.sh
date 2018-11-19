@@ -2,7 +2,7 @@ function izi(){
   set -a
   . $IZI_CLI/.env
   . $IZI_CLI/utilities.sh
-  export -f izi
+  export izi
   com="$IZI_CLI/commands/$1.sh"
   if [ -e $com ]
   then
